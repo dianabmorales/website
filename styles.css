@@ -1,63 +1,69 @@
 h1 {
-  margin: 0;
+  margin: 1;
   font-family: 'Cedarville Cursive', cursive;
-  font-size: 5.625rem;
-  color: #66BFBF;
+  font-size: 6rem;
+  color: #adccff;
 }
 
 h2{
-  font-size: 2.5rem;
-  color: #66BFBF;
+  font-size: 2rem;
+  color: #adccff;
   font-weight: normal;
 }
 
 h3{
-  color: #11999E;
+  color: #adccff;
+}
+
+h4{
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+hr{
+  border-top: 7px dashed #adccff;
+  width: 10%;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
 }
 
 a{
-  color: #11999E;
+  color: #adccff;
 }
 
 body{
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Mono', monospace;
   text-align: center;
-  line-height: 2;
-}
-
-span{
-  text-decoration: underline;
+  position: relative;
 }
 
 p{
-  width: 50%;
-  margin: auto;
+  width: auto;
 }
 
-.top-container {
+.hello-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  min-height: 100vh;
+  line-height: 0.5;
   font-family: 'PT Mono', monospace;
 }
 
-.middle-container{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
-.bottom-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-}
-
-.top-cloud{
-  position: absolute;
-  right: 300px;
-  top: 50px;
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  line-height: 0.5;
+  font-family: 'PT Mono', monospace;
 }
 
 .skill-row{
@@ -79,10 +85,6 @@ p{
   margin-left: 30px;
 }
 
-.brain-img{
-  width: 12.5%;
-}
-
 .profile{
   padding-bottom: 50px;
 }
@@ -92,15 +94,9 @@ p{
 }
 
 .contact-me{
-  padding-top: 50px;
-}
-
-hr{
-  border-top: 7px dotted #dedede;
-  width: 5%;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-right-style: none;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .icons{
@@ -109,10 +105,10 @@ hr{
 
 .bottom-container{
   padding-top: 40px;
-  padding-bottom: 20px;
-  background-color:#11999E;
+  padding-bottom: 30px;
+  background-color:#adccff;
   margin: 0;
-  color: #EAF6F6;
+  color: #adccff;
 }
 
 .footer-link{
@@ -131,49 +127,45 @@ hr{
   font-size: 0.7rem;
   color: #ffffff;
 }
-
-.p-exception{
-  width: auto;
-}
+/*
+Contact me button
 
 .myButton {
 	-moz-box-shadow: 0 9px 14px -7px #186173;
 	-webkit-box-shadow: 0 9px 14px -7px #186173;
 	box-shadow: 0 9px 14px -7px #186173;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #53d6db), color-stop(1, #3f9b9e));
-	background:-moz-linear-gradient(top, #53d6db 5%, #3f9b9e 100%);
-	background:-webkit-linear-gradient(top, #53d6db 5%, #3f9b9e 100%);
-	background:-o-linear-gradient(top, #53d6db 5%, #3f9b9e 100%);
-	background:-ms-linear-gradient(top, #53d6db 5%, #3f9b9e 100%);
-	background:linear-gradient(to bottom, #53d6db 5%, #3f9b9e 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#53d6db', endColorstr='#3f9b9e',GradientType=0);
-	background-color:#53d6db;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #adccff), color-stop(1, #adccff));
+	background:-moz-linear-gradient(top, #adccff 5%, #97b2de 100%);
+	background:-webkit-linear-gradient(top, #adccff 5%, #97b2de 100%);
+	background:-o-linear-gradient(top, #adccff 5%, #97b2de 100%);
+	background:-ms-linear-gradient(top, #adccff 5%, #97b2de 100%);
+	background:linear-gradient(to bottom, #adccff 5%, #97b2de 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#adccff', endColorstr='#adccff',GradientType=0);
+	background-color:#adccff;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	border-radius:15px;
-	border:1px solid #389fa3;
+	border:1px solid #adccff;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size: 15px;
-	font-weight:bold;
 	padding:10px 20px;
 	text-decoration:none;
-	text-shadow:0 1px 0 #238c94;
+	text-shadow:0 1px 0 #adccff;
   margin: 20px;
 }
 .myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3f9b9e), color-stop(1, #53d6db));
-	background:-moz-linear-gradient(top, #3f9b9e 5%, #53d6db 100%);
-	background:-webkit-linear-gradient(top, #3f9b9e 5%, #53d6db 100%);
-	background:-o-linear-gradient(top, #3f9b9e 5%, #53d6db 100%);
-	background:-ms-linear-gradient(top, #3f9b9e 5%, #53d6db 100%);
-	background:linear-gradient(to bottom, #3f9b9e 5%, #53d6db 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f9b9e', endColorstr='#53d6db',GradientType=0);
-	background-color:#3f9b9e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #adccff), color-stop(1, #adccff));
+	background:-moz-linear-gradient(top, #adccff 5%, #adccff 100%);
+	background:-webkit-linear-gradient(top, #adccff 5%, #adccff 100%);
+	background:-o-linear-gradient(top, #adccff 5%, #adccff 100%);
+	background:-ms-linear-gradient(top, #adccff 5%, #adccff 100%);
+	background:linear-gradient(to bottom, #adccff 5%, #adccff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#adccff', endColorstr='#adccff',GradientType=0);
+	background-color:#adccff;
 }
 .myButton:active {
 	position:relative;
 	top:1px;
 }
+*/
